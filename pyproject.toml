@@ -1,12 +1,14 @@
 [tool.poetry]
-name = "python-template"
+name = "steev-docs"
 version = "0.1.0"
-description = "Python template repository"
-authors = ["Your Name <you@example.com>"]
+description = "Steev documentation"
+authors = ["psycoder-sup <psycoder@steev.io>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+mkdocs = "^1.6.1"
+mkdocs-material = "^9.5.50"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.11.2"
