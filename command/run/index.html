@@ -471,9 +471,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
+  <a href="#steev-config" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuration
+      Steev Config
     </span>
   </a>
   
@@ -622,9 +622,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
+  <a href="#steev-config" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuration
+      Steev Config
     </span>
   </a>
   
@@ -700,8 +700,19 @@ steev<span class="w"> </span>run<span class="w"> </span>train.py<span class="w">
 <li>The email will include an &ldquo;Abort Experiment&rdquo; button</li>
 <li>Clicking the button will safely stop your experiment</li>
 </ol>
-<h2 id="configuration">Configuration</h2>
-<p>Explain configuration here. @sungman</p>
+<h2 id="steev-config">Steev Config</h2>
+<p>Steev config is a file that contains the configuration for your experiment. 
+It is used to specify the parameters for tracking during your experiment.</p>
+<p>Below is an example of a Steev config file:</p>
+<div class="highlight"><pre><span></span><code><span class="na">alert_rules</span><span class="o">:</span>
+<span class="w">  </span><span class="na">metrics</span><span class="o">:</span><span class="w"> </span><span class="c1"># Add metrics name to monitor</span>
+<span class="w">    </span><span class="na">- name</span><span class="o">:</span><span class="w"> </span><span class="s">loss</span>
+<span class="w">    </span><span class="na">- name</span><span class="o">:</span><span class="w"> </span><span class="s">grad_norm</span>
+<span class="w">  </span><span class="na">actions</span><span class="o">:</span>
+<span class="w">    </span><span class="na">notify_user</span><span class="o">:</span><span class="w"> </span><span class="s">true</span>
+</code></pre></div>
+<p>If you want to track additional metrics, add the metric names to the <code>metrics</code> list to monitor.
+(For example, &lsquo;val_loss&rsquo;, &lsquo;val_accuracy&rsquo;, &lsquo;loss_mAP&rsquo;, etc.)</p>
 
 
 
