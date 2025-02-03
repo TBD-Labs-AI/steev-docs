@@ -1,45 +1,57 @@
-# Quick Tour
+# Quick Tour 🚀
 
+Welcome to Steev! This guide will help you get started with our AI-powered training assistant.
 
-## Getting Started
+## Getting Started 🎯
 
-After you have installed Steev, you can start using it by running the following command:
+After installing Steev, you can start using it with a simple command:
 
 ```bash
 steev run train.py
 ```
 
-If you have previously used additional arguments to edit parameters, you can use the same arguments to run Steev.
+Need to customize training parameters? No problem! Use the `--kwargs` flag:
 
 ```bash
-steev run train.py --kwargs learning-rate=0.001 batch-size=32
-# Or, steev run train.py --kwargs lr=0.001 bs=32
+steev run train.py --kwargs "learning-rate=0.001 batch-size=32"
 ```
 
-### What Happens Next?
+💡 **Pro tip:** You can use shorthand arguments too:
+```bash
+steev run train.py --kwargs "lr=0.001 bs=32"
+```
 
-When you run this command, Steev will:
+## What Happens Next? 🔄
 
-1. Review Your Code
-    - Analyze architecture & dataset
-    - Check configurations
-    - Suggest improvements
-  
-2. Monitor Training and Proactively Respond
-    - Track metrics
-    - Detect anomalies
-    - Manage resources
+When you run Steev, it springs into action with three main phases:
 
-3. Optimize & Deliver
-    - Fine-tune parameters
-    - Select best weights
-    - Generate reports
+### 1. Code Review & Analysis 🔍
+- ✅ Analyzes your training code
+- ✅ Reviews configurations and dependencies
+- ⬜️ Provides smart suggestions for improvements
 
-## Next Steps
+### 2. Training Supervision 📊
+- ✅ Monitors training metrics in real-time
+- ✅ Detects and alerts you about anomalies
+- ⬜️ Manages computational resources efficiently
+- ⬜️ Automatically adjusts parameters when needed
 
-Ready to dive deeper? Here's what you can do next:
+### 3. Optimization & Results 🎯
+- ⬜️ Fine-tunes hyperparameters intelligently
+- ⬜️ Selects the best model weights
+- ⬜️ Generates comprehensive training reports
+- ⬜️ Provides insights for future improvements
 
-1. 📚 Read our [Installation Guide](installation.md)
-2. 💡 Try the [Tutorials](tutorials.md)
-3. 👥 Join our [Discord Community](https://discord.gg/UxMXBHUWcr)
-4. 🔧 Explore [Commands](command/auth.md)
+## Next Steps 🌟
+
+Ready to explore more? Here's your roadmap:
+
+| Resource | Description |
+|----------|-------------|
+| 💡 [Tutorials](tutorials.md) | Hands-on examples and guides |
+| 👥 [Discord Community](https://discord.gg/UxMXBHUWcr) | Join our active community |
+| 🔧 [Commands](command/auth.md) | Explore all available commands |
+
+---
+
+Need help? Join our [Discord community](https://discord.gg/UxMXBHUWcr) or check out our [documentation](https://docs.steev.ai).

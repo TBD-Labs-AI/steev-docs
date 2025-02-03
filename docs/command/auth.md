@@ -6,118 +6,103 @@ Manage your authentication using the `steev auth` command.
 steev auth <subcommand>
 ```
 
-This command allows you to authenticate your Steev account. You can sign in or log in using this command. During the beta phase, Steev is completely free. However, authentication is required because the LLM Agent needs to analyze your logs to provide optimal service.
+During the beta phase, Steev is completely free. However, authentication is required since the LLM Agent needs to analyze your logs to provide optimal service.
 
 ## Subcommands
 
 ### login
+Log in or sign up for your Steev account. You have two authentication methods available:
+
+1. Browser-based login (recommended for local machines)
+2. Token-based login (useful for remote servers)
 
 ```bash
 steev auth login
 ```
 
-Use this command to log in or sign up for your Steev account. You have two login methods to choose from:
+When you run the login command, you'll see:
+```
+Choose authentication method:
+> Log in with web browser (Login from local)
+  Paste an auth token (Login from remote server)
+```
 
-1. Open a web browser
-2. Use the CLI
+Steev uses Google OAuth for authentication. After successful login, your credentials are stored in `~/.steev/credentials.json`:
 
-!!! example "Expected output"
-    ```
-    # Login prompt
-    Choose authentication method:
-    > Log in with web browser (Login from local)
-      Paste an auth token (Login from remote server)
-    ```
-
-If you are using a remote server, you can log in by pasting an auth token.
-`steev` uses Google OAuth for authentication.
-
-Once you log in, your token will be saved in the `~/.steev/credentials.json` file.
-
-!!! example "Expected output"
-    example of `credentials.json` file:
-    ```json
-    {
-      "user": "username", 
-      "email": "steev@steev.io", 
-      "token": {
-        "access_token": "some access token",
-        "refresh_token": "some refresh token",
-        "access_exp": 1738657951 # access token expiration time in integer
-      }
-    }
-    ```
+```json
+{
+  "user": "username", 
+  "email": "steev@steev.io", 
+  "token": {
+    "access_token": "your-access-token",
+    "refresh_token": "your-refresh-token",
+    "access_exp": 1738657951  // Expiration timestamp
+  }
+}
+```
 
 ### status
-
-You can check your credentials using the `status` subcommand.
+Check your current authentication status:
 
 ```bash
 steev auth status
 ```
 
-!!! example "Expected output"
-    ```
-    Credential
-      user   
-      email  steev@steev.io
-    tokens
-      access_token   some access token...
-      refresh_token  some refresh token...
-      access_exp     2099-12-25 23:59:59
-    ```
+Example output:
+```
+Credential
+  user   
+  email  steev@steev.io
+tokens
+  access_token   your-access-token...
+  refresh_token  your-refresh-token...
+  access_exp     2099-12-25 23:59:59
+```
 
 ### logout
-
-You can log out using the `logout` subcommand.
+Sign out and remove stored credentials:
 
 ```bash
 steev auth logout
 ```
 
-!!! example "Expected output"
-    ```prompt
-    Successfully logged out
-    ```
+This command:
+- Revokes your access and refresh tokens
+- Deletes the `~/.steev/credentials.json` file
 
-This commands revoke your access token and refresh token. and delete the `~/.steev/credentials.json` file.
-
+You'll see:
+```
+Successfully logged out
+```
 
 ### verify
-
-You can verify your credentials using the `verify` subcommand.
+Verify if your current credentials are valid:
 
 ```bash
 steev auth verify
 ```
 
-If the credentials are valid, you will see the following output:
-!!! example "Expected output"
-      ```prompt
-      Credential token is valid
-      ```
-
-If the credentials are invalid, you will see the following output:
-!!! example "Expected output"
-      ```prompt
-      Credential token is invalid
-      ```
-
+You'll see one of these messages:
+```
+Credential token is valid
+```
+or
+```
+Credential token is invalid
+```
 
 ### refresh
-
-You can refresh your credentials using the `refresh` subcommand.
+Manually refresh your authentication tokens:
 
 ```bash
 steev auth refresh
 ```
 
-!!! example "Expected output"
-      ```prompt
-      Credential token refreshed
-      ```
+This command:
+- Obtains new access and refresh tokens
+- Updates the `~/.steev/credentials.json` file
 
-This commands refresh your access token and refresh token. and update the `~/.steev/credentials.json` file.
-
-
-
+You'll see:
+```
+Credential token refreshed
+```
