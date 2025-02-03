@@ -64,6 +64,21 @@ During training, Steev actively monitors your experiment logs for anomalies. If 
 2. The email will include an "Abort Experiment" button
 3. Clicking the button will safely stop your experiment
 
-## Configuration
+## Steev Config
 
-Explain configuration here. @sungman
+Steev config is a file that contains the configuration for your experiment. 
+It is used to specify the parameters for tracking during your experiment.
+
+Below is an example of a Steev config file:
+
+```cfg
+alert_rules:
+  metrics: # Add metrics name to monitor
+    - name: loss
+    - name: grad_norm
+  actions:
+    notify_user: true
+```
+
+If you want to track additional metrics, add the metric names to the `metrics` list to monitor.
+(For example, 'val_loss', 'val_accuracy', 'loss_mAP', etc.)

@@ -25,12 +25,12 @@ pip install steev
 After installation, verify that Steev is installed correctly by running:
 
 ```bash
-steev version
+steev --version
 ```
 
 You should see output similar to:
 ```
-steev version 0.1.0
+steev, version 0.1.0
 ```
 
 ## Authentication
