@@ -1,9 +1,14 @@
 site_name: Steev Docs
 
 nav:
-  - 🏠 Welcome: welcome.md
+  - 🏠 Welcome: index.md
   - 💻 Installation: installation.md
   - 🎯 Quick tour: quick-tour.md
+  - 📚 Tutorials: tutorials.md
+  - 📝 Commands:
+    - Authentication: command/auth.md
+    - Run: command/run.md
+
 
 theme:
   name: material
@@ -33,3 +38,5 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# welcome.md를 홈페이지로 설정

@@ -40,9 +40,6 @@ When you run this command, Steev will:
 Ready to dive deeper? Here's what you can do next:
 
 1. 📚 Read our [Installation Guide](installation.md)
-2. 💡 Try the [Tutorials](../tutorials/run-with-script.md)
-3. 👥 Join our [Discord Community](https://discord.gg/steev)
-4. 🔧 Explore advanced features:
-   - Custom optimization strategies
-   - Distributed training
-   - Framework integrations 
+2. 💡 Try the [Tutorials](tutorials.md)
+3. 👥 Join our [Discord Community](https://discord.gg/UxMXBHUWcr)
+4. 🔧 Explore [Commands](command/auth.md)

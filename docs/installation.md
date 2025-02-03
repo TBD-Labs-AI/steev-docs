@@ -5,7 +5,7 @@ This guide will help you install Steev on your system.
 ## System Requirements
 
 - Python 3.11 or higher
-- Packages to execute your script 
+- Packages to execute your training code (e.g. transformers, unsloth)
 
 ## Installation Steps
 
@@ -13,7 +13,7 @@ Note that we've tested only on Linux. MacOS and Windows are not supported yet.
 
 ### Using pip
 
-The easiest way to install Steev is using pip **on your virtual environment**:
+The easiest way to install Steev is using pip:
 
 ```bash
 pip install steev
@@ -28,8 +28,8 @@ steev version
 ```
 
 !!! example "Expected output"
-    ```plaintext
-    steev version 0.1.0
+    ```
+    steev version 0.1.0 
     ```
 
 ## Sign-up / Login
