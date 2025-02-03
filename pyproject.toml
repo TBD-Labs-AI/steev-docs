@@ -4,11 +4,15 @@ version = "0.1.0"
 description = "Steev documentation"
 authors = ["psycoder-sup <psycoder@steev.io>"]
 readme = "README.md"
+packages = [
+    { include = "src" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 mkdocs = "^1.6.1"
 mkdocs-material = "^9.5.50"
+mkdocs-dracula-theme = "^1.0.7"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.11.2"
