@@ -9,7 +9,7 @@ DeepSeek-R1 is a state-of-the-art language model known for its efficiency in han
 
 First, install the necessary packages.
 ```bash
-pip install unsloth steev-cli trl
+pip install unsloth steev trl
 ```
 
 To proceed, you need to authenticate with Steev.  
