@@ -74,4 +74,4 @@ extra:
     footer:
       - Terms & Conditions: terms.md
       - Privacy Policy: privacy.md
-copyright: Copyright &copy; 2024 TBD Labs<br> <a href="/terms">Terms of Service</a> | <a href="/privacy">Privacy Policy</a>
+copyright: Copyright &copy; 2024 TBD Labs<br> <a href="/steev-docs/terms/">Terms of Service</a> | <a href="/steev-docs/privacy/">Privacy Policy</a>
