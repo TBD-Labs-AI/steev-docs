@@ -5,7 +5,6 @@ nav:
   - 💻 Installation: installation.md
   - 🎯 Quick tour: quick-tour.md
   - 📚 Tutorials:
-    - ✔️ HuggingFace SFT: tutorials/huggingface-sft.ipynb
     - ✔️ Unsloth: tutorials/unsloth.ipynb
   - 📝 Commands:
     - 🔑 Authentication: command/auth.md
