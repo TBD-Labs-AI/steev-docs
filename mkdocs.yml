@@ -11,6 +11,9 @@ nav:
   - 📝 Commands:
     - Authentication: command/auth.md
     - Run: command/run.md
+  - ⚖️ Legal:
+    - Privacy Policy: privacy.md
+    - Terms & Conditions: terms.md
 
 theme:
   name: material
