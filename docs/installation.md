@@ -66,7 +66,7 @@ Now that you have Steev installed and configured:
 
 1. Follow our [Quick Tour](quick-tour.md) to learn the basics
 2. Explore the [Command Reference](command/run.md) for detailed usage
-3. Check out [Tutorials](tutorials.md) for practical examples
+3. Check out [Tutorials](tutorials/overview.md) for practical examples
 
 !!! question "Need Help?"
     If you run into any issues during installation, please join our community [Discord](https://discord.gg/UxMXBHUWcr).

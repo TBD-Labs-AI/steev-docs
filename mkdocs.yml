@@ -5,19 +5,16 @@ nav:
   - 💻 Installation: installation.md
   - 🎯 Quick tour: quick-tour.md
   - 📚 Tutorials:
-    - ✔️ Unsloth: tutorials/unsloth.ipynb
+    - Overview: tutorials/overview.md
+    - Unsloth: tutorials/unsloth.md
   - 📝 Commands:
-    - 🔑 Authentication: command/auth.md
-    - 🚀 Run: command/run.md
-  - 🤖 steev: https://steev.io
-  - 💬 Discord: https://discord.gg/UxMXBHUWcr
-  - Legal:
-    - Terms & Conditions: terms.md
-    - Privacy Policy: privacy.md
+    - Authentication: command/auth.md
+    - Run: command/run.md
 
 theme:
   name: material
-  custom_dir: overrides
+  logo: assets/small_logo.png
+  favicon: assets/small_logo.png
   font:
     text: Roboto
     code: Roboto Mono
@@ -43,7 +40,8 @@ theme:
     - content.footnote.tooltips
     - content.code.copy    # Add copy button to code blocks
     - content.code.select  # Add code block selection
-    - navigation.footer    # Enable footer navigation
+    - navigation.footer    
+    - navigation.tabs
 
 extra_css:
   - stylesheets/extra.css
@@ -72,4 +70,4 @@ extra:
     footer:
       - Terms & Conditions: terms.md
       - Privacy Policy: privacy.md
-copyright: Copyright &copy; 2024 TBD Labs
+copyright: Copyright &copy; 2024 TBD Labs<br> <a href="/terms">Terms of Service</a> | <a href="/privacy">Privacy Policy</a>

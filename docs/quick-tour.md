@@ -48,7 +48,7 @@ Ready to explore more? Here's your roadmap:
 
 | Resource | Description |
 |----------|-------------|
-| 💡 [Tutorials](tutorials.md) | Hands-on examples and guides |
+| 💡 [Tutorials](tutorials/overview.md) | Hands-on examples and guides |
 | 👥 [Discord Community](https://discord.gg/UxMXBHUWcr) | Join our active community |
 | 🔧 [Commands](command/auth.md) | Explore all available commands |
 
