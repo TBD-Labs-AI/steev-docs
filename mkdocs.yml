@@ -4,12 +4,17 @@ nav:
   - 🏠 Welcome: index.md
   - 💻 Installation: installation.md
   - 🎯 Quick tour: quick-tour.md
-  - 📚 Tutorials: tutorials.md
+  - 📚 Tutorials:
+    - ✔️ HuggingFace SFT: tutorials/huggingface-sft.ipynb
+    - ✔️ Unsloth: tutorials/unsloth.ipynb
   - 📝 Commands:
     - 🔑 Authentication: command/auth.md
     - 🚀 Run: command/run.md
   - 🤖 steev: https://steev.io
   - 💬 Discord: https://discord.gg/UxMXBHUWcr
+  - Legal:
+    - Terms & Conditions: terms.md
+    - Privacy Policy: privacy.md
 
 theme:
   name: material
@@ -36,6 +41,9 @@ theme:
         name: Switch to light mode
   features:
     - content.footnote.tooltips
+    - content.code.copy    # Add copy button to code blocks
+    - content.code.select  # Add code block selection
+    - navigation.footer    # Enable footer navigation
 
 extra_css:
   - stylesheets/extra.css
@@ -51,7 +59,6 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-# welcome.md를 홈페이지로 설정
 extra:
   social:
     - icon: fontawesome/solid/house
@@ -60,3 +67,9 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/UxMXBHUWcr
       name: Discord
+  generator: true
+  navigation:
+    footer:
+      - Terms & Conditions: terms.md
+      - Privacy Policy: privacy.md
+copyright: Copyright &copy; 2024 TBD Labs
