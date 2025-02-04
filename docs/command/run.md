@@ -3,7 +3,7 @@
 Execute your training code using the `steev run` command. Steev automatically runs your experiment code and analyzes the results, eliminating the need to write additional scripts.
 
 !!! warning
-    The current version of Steev only supports the [transformers](https://github.com/huggingface/transformers) and [unsloth](https://github.com/unslothai/unsloth) libraries.
+    The current version of Steev only supports the [HuggingFace TRL](https://github.com/huggingface/trl) and [Unsloth](https://github.com/unslothai/unsloth) libraries.
 
 ## Basic Usage
 

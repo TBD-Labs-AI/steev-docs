@@ -7,6 +7,7 @@ nav:
   - 📚 Tutorials:
     - Overview: tutorials/overview.md
     - Unsloth: tutorials/unsloth.md
+    - HuggingFace TRL: tutorials/trl.md
   - 📝 Commands:
     - Authentication: command/auth.md
     - Run: command/run.md
