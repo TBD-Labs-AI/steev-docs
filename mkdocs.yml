@@ -69,9 +69,11 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/UxMXBHUWcr
       name: Discord
+
   generator: true
-  navigation:
-    footer:
-      - Terms & Conditions: terms.md
-      - Privacy Policy: privacy.md
+
+  analytics:
+    provider: google
+    property: G-JS1XXC059K
+    
 copyright: Copyright &copy; 2024 TBD Labs<br> <a href="/steev-docs/terms/">Terms of Service</a> | <a href="/steev-docs/privacy/">Privacy Policy</a>
