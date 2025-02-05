@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../welcome/roadmap/">
       
       
-        <link rel="next" href="../quick-tour/">
+        <link rel="next" href="../tutorials/overview/">
       
       
       <link rel="icon" href="../assets/small_logo.png">
@@ -209,16 +209,17 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
-        
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="../welcome/roadmap/" class="md-tabs__link">
+          
   
   🏠 Welcome
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -235,23 +236,6 @@
     
   
   💻 Installation
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../quick-tour/" class="md-tabs__link">
-        
-  
-    
-  
-  🎯 Quick tour
 
       </a>
     </li>
@@ -332,16 +316,62 @@
   
   
   
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     🏠 Welcome
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            🏠 Welcome
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../welcome/roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roadmap
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -487,26 +517,6 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../quick-tour/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    🎯 Quick tour
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     
     
     
@@ -518,10 +528,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -532,8 +542,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             📚 Tutorials
           </label>
@@ -626,10 +636,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -640,8 +650,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             📝 Commands
           </label>
@@ -842,14 +852,18 @@
 </code></pre></div>
 <p>You&rsquo;ll be presented with two authentication options:</p>
 <ol>
-<li><strong>Browser Login</strong> (Recommended for local machines)</li>
 <li>
-<p>Opens your default web browser for a seamless login experience</p>
+<p><strong>Browser Login</strong> (Recommended for local machines)</p>
+<ul>
+<li>Opens your default web browser for a seamless login experience</li>
+</ul>
 </li>
 <li>
 <p><strong>Token Login</strong> (For remote servers)</p>
-</li>
+<ul>
 <li>Uses an authentication token when browser access isn&rsquo;t available</li>
+</ul>
+</li>
 </ol>
 <div class="highlight"><pre><span></span><code>Choose authentication method:
   Log in with web browser (Login from local)
@@ -862,9 +876,8 @@
 <h2 id="next-steps">Next Steps</h2>
 <p>Now that you have Steev installed and configured:</p>
 <ol>
-<li>Follow our <a href="../quick-tour/">Quick Tour</a> to learn the basics</li>
+<li>Follow our <a href="../tutorials/unsloth/">Tutorials</a> to get started with Llama 8B distilled from DeepSeek-R1</li>
 <li>Explore the <a href="../command/run/">Command Reference</a> for detailed usage</li>
-<li>Check out <a href="../tutorials/overview/">Tutorials</a> for practical examples</li>
 </ol>
 <div class="admonition question">
 <p class="admonition-title">Need Help?</p>
@@ -901,7 +914,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: 🏠 Welcome">
+          <a href="../welcome/roadmap/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Roadmap">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -911,20 +924,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                🏠 Welcome
+                Roadmap
               </div>
             </div>
           </a>
         
         
           
-          <a href="../quick-tour/" class="md-footer__link md-footer__link--next" aria-label="Next: 🎯 Quick tour">
+          <a href="../tutorials/overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                🎯 Quick tour
+                Overview
               </div>
             </div>
             <div class="md-footer__button md-icon">
