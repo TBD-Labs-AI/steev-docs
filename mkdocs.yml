@@ -1,9 +1,9 @@
 site_name: Steev Docs
 
 nav:
-  - 🏠 Welcome: index.md
+  - 🏠 Welcome:
+    - Roadmap: welcome/roadmap.md
   - 💻 Installation: installation.md
-  - 🎯 Quick tour: quick-tour.md
   - 📚 Tutorials:
     - Overview: tutorials/overview.md
     - Unsloth: tutorials/unsloth.md

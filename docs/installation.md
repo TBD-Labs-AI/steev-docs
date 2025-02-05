@@ -46,10 +46,10 @@ steev auth login
 You'll be presented with two authentication options:
 
 1. **Browser Login** (Recommended for local machines)
-   - Opens your default web browser for a seamless login experience
+     - Opens your default web browser for a seamless login experience
    
 2. **Token Login** (For remote servers)
-   - Uses an authentication token when browser access isn't available
+     - Uses an authentication token when browser access isn't available
 
 ```
 Choose authentication method:
@@ -64,9 +64,8 @@ Choose authentication method:
 
 Now that you have Steev installed and configured:
 
-1. Follow our [Quick Tour](quick-tour.md) to learn the basics
+1. Follow our [Tutorials](tutorials/unsloth.md) to get started with Llama 8B distilled from DeepSeek-R1
 2. Explore the [Command Reference](command/run.md) for detailed usage
-3. Check out [Tutorials](tutorials/overview.md) for practical examples
 
 !!! question "Need Help?"
     If you run into any issues during installation, please join our community [Discord](https://discord.gg/UxMXBHUWcr).
