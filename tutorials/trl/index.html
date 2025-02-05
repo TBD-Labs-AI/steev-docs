@@ -46,8 +46,6 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -736,13 +734,13 @@ Additionally, <span style="color:violet"><strong>Pytorch</strong></span> and <sp
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>steev<span class="w"> </span>trl
 </code></pre></div></p>
 <p>To proceed, you need to authenticate with Steev.<br />
-For more details on authentication, refer to <a href="../../command/auth/">Authentication</a>
+For more details on authentication, refer to <a href="../../command/auth/">Authentication</a></p>
 <div class="highlight"><pre><span></span><code>steev<span class="w"> </span>auth<span class="w"> </span>login
-</code></pre></div></p>
+</code></pre></div>
 <h2 id="get-the-example-code">Get the example code</h2>
 <p>We&rsquo;ll use an example from <a href="https://github.com/huggingface/trl/blob/main/trl/scripts/sft.py">HuggingFace TRL Documentation</a>.
 Copy the following code and save it as <code>trl_train.py</code></p>
-<p>The code below is a simplified version of the example.
+<p>The code below is a simplified version of the example.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">argparse</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">multiprocessing</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
@@ -910,15 +908,15 @@ Copy the following code and save it as <code>trl_train.py</code></p>
     <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">output_dir</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="n">logging</span><span class="o">.</span><span class="n">set_verbosity_error</span><span class="p">()</span>
     <span class="n">main</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
-</code></pre></div></p>
+</code></pre></div>
 <h2 id="run-the-code-with-steev-with-no-configuration">Run the code with Steev with no configuration</h2>
 <p>To run the script with Steev, simply execute the following command.
-<div class="highlight"><pre><span></span><code>steev<span class="w"> </span>run<span class="w"> </span>trl_train.py
+<div class="highlight"><pre><span></span><code>steev<span class="w"> </span>run<span class="w"> </span>trl_train.py<span class="w"> </span>
 </code></pre></div></p>
 <p>If you want to modify the parameters, there is no need to change the code.
-Just pass the parameters to the command. Steev handles the rest.
+Just pass the parameters to the command. Steev handles the rest.</p>
 <div class="highlight"><pre><span></span><code>steev<span class="w"> </span>run<span class="w"> </span>trl_train.py<span class="w"> </span>--kwargs<span class="w"> </span><span class="nv">lr</span><span class="o">=</span><span class="m">0</span>.1
-</code></pre></div></p>
+</code></pre></div>
 
 
 
