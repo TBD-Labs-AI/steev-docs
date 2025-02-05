@@ -44,11 +44,9 @@ theme:
     - content.footnote.tooltips
     - content.code.copy    # Add copy button to code blocks
     - content.code.select  # Add code block selection
-    - navigation.footer    
+    - navigation.footer
     - navigation.tabs
 
-extra_css:
-  - stylesheets/extra.css
 
 markdown_extensions:
   - attr_list

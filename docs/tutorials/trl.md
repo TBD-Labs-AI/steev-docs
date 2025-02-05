@@ -1,11 +1,16 @@
 # Finetune with HuggingFace TRL
+
 In this tutorial, we will fine-tune the distilled <span style="color:violet;">**DeepSeek-R1**</span> model using <span style="color:violet;">**HuggingFace TRL**</span>.
 
 DeepSeek-R1 is a state-of-the-art language model known for its efficiency in handling large datasets. It uses advanced techniques to minimize computational resources. HuggingFace TRL is a library that simplifies model training and fine-tuning.
+
 ## Pre-requisites
+
 !!! note "Pre-requisites"
+
     To follow this tutorial, you need to have <span style="color:red">**GPU and CUDA driver installed**</span>.  
     Additionally, <span style="color:violet">**Pytorch**</span> and <span style="color:violet">**Transformers**</span> are required.
+
 
 First, install the necessary packages.
 ```bash
@@ -14,14 +19,17 @@ pip install steev trl
 
 To proceed, you need to authenticate with Steev.  
 For more details on authentication, refer to [Authentication](../command/auth.md)
+
 ```bash
 steev auth login
 ```
+
 ## Get the example code
 We'll use an example from [HuggingFace TRL Documentation](https://github.com/huggingface/trl/blob/main/trl/scripts/sft.py).
 Copy the following code and save it as `trl_train.py`
 
 The code below is a simplified version of the example.
+
 ```python
 import argparse
 import multiprocessing
@@ -192,13 +200,15 @@ if __name__ == "__main__":
     main(args)
 ```
 ## Run the code with Steev with no configuration
+
 To run the script with Steev, simply execute the following command.
 ```bash
-steev run trl_train.py
+steev run trl_train.py 
 ```
-  
+
 If you want to modify the parameters, there is no need to change the code.
 Just pass the parameters to the command. Steev handles the rest.
+
 ```bash
 steev run trl_train.py --kwargs lr=0.1
 ```
