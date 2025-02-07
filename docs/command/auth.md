@@ -20,12 +20,16 @@ Log in or sign up for your Steev account. You have two authentication methods av
 steev auth login
 ```
 
-When you run the login command, you'll see:
+When you run the login command, browser will open and you can login with your Google account.
+If browser is not opened, you can login with token.
+
+Follow the instructions to login with token.
+
+``` text
+Access to the url some_url_here
+Please paste your auth token:
 ```
-Choose authentication method:
-> Log in with web browser (Login from local)
-  Paste an auth token (Login from remote server)
-```
+
 
 Steev uses Google OAuth for authentication. After successful login, your credentials are stored in `~/.steev/credentials.json`:
 
