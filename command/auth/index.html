@@ -15,7 +15,7 @@
         <link rel="next" href="../run/">
       
       
-      <link rel="icon" href="../../assets/small_logo.png">
+      <link rel="icon" href="../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
     
     
@@ -98,7 +98,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Steev Docs" class="md-header__button md-logo" aria-label="Steev Docs" data-md-component="logo">
       
-  <img src="../../assets/small_logo.png" alt="logo">
+  <img src="../../assets/bold_logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -302,7 +302,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Steev Docs" class="md-nav__button md-logo" aria-label="Steev Docs" data-md-component="logo">
       
-  <img src="../../assets/small_logo.png" alt="logo">
+  <img src="../../assets/bold_logo.png" alt="logo">
 
     </a>
     Steev Docs
@@ -811,11 +811,12 @@
 </ol>
 <div class="highlight"><pre><span></span><code>steev<span class="w"> </span>auth<span class="w"> </span>login
 </code></pre></div>
-<p>When you run the login command, you&rsquo;ll see:
-<div class="highlight"><pre><span></span><code>Choose authentication method:
-&gt; Log in with web browser (Login from local)
-  Paste an auth token (Login from remote server)
-</code></pre></div></p>
+<p>When you run the login command, browser will open and you can login with your Google account.
+If browser is not opened, you can login with token.</p>
+<p>Follow the instructions to login with token.</p>
+<div class="highlight"><pre><span></span><code>Access to the url some_url_here
+Please paste your auth token:
+</code></pre></div>
 <p>Steev uses Google OAuth for authentication. After successful login, your credentials are stored in <code>~/.steev/credentials.json</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;username&quot;</span><span class="p">,</span><span class="w"> </span>
