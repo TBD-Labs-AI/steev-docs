@@ -17,8 +17,8 @@ nav:
 
 theme:
   name: material
-  logo: assets/small_logo.png
-  favicon: assets/small_logo.png
+  logo: assets/bold_logo.png
+  favicon: assets/favicon.png
   font:
     text: Roboto
     code: Roboto Mono
